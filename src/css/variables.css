@@ -1,8 +1,8 @@
 :root{
     --max-width-size: 1920px;
-    --primary-soft-color:lightskyblue;
-    --secondary-soft-color:lightpink;
-    --header-bg-color: white;
-    --menu-hover-color:coral;
-    --footer-bg-color:lightgreen;
+    --primary-soft-color: rgb(255 244 230);
+    --secondary-soft-color:rgb(255 244 230);
+    --header-bg-color: rgb(87, 79, 79);
+    --menu-hover-color:rgba(245, 160, 42, 0.716);
+    --footer-bg-color: rgb(255 244 230);
 }

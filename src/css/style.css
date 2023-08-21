@@ -12,7 +12,10 @@ body{
 
 .header{
     grid-area: header;
-    background-color: var(--header-bg-color);
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 2;
 }
 
 .header .header-container{
@@ -24,9 +27,12 @@ body{
 }
 
 .header .header-container h1{
-    font-size: 3rem;
-    font-weight: 700;
-    transition: 0.3s;
+    font-family: 'Acme', sans-serif;
+    /*font-size: 3rem;
+    font-weight: 400;
+    transition: 0.3s; */
+   
+   
 }
 
 .header .header-container a:hover h1{
@@ -45,9 +51,9 @@ body{
 }
 
 .hero h2{
+    font-family: 'Acme', sans-serif;
     font-weight: 500;
-    text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 7rem;
 }
 
 .hero:after{
@@ -85,7 +91,8 @@ body{
 }
 
 .about .item p{
-    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+  /*  font-size: 1.8rem; */
     margin: 3rem 0;
 }
 
@@ -109,15 +116,16 @@ body{
 }
 
 .about .image.left{
-    background: url(../img/pet03.png) center center no-repeat;
+    background: url(../img/pet14.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .services{
     grid-area: services;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    /*grid-template-columns: 1fr 1fr; */
     text-align: center;
+    flex-direction: column;
 }
 
 .services .service{
@@ -129,9 +137,9 @@ body{
     margin-bottom: 3rem;
 }
 
-.services .service h3{
-    font-size: 1.8rem;
-    font-weight: 700;
+.services .service h1{
+    /*font-size: 1.8rem; */
+    font-weight: 800;
 }
 
 .services .service ul{
@@ -167,10 +175,13 @@ body{
 .footer{
     grid-area: footer;
     display: flex;
-    background-color: var(--footer-bg-color);
     flex-direction: column;
     text-align: center;
     padding: 10rem 0;
+    background-color:  var(--footer-bg-color);
+    align-content: center;
+    flex-wrap: wrap;
+ 
 }
 
 .footer h4{
@@ -178,6 +189,7 @@ body{
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
+
 
 .footer nav{
     margin: 5rem 0;
@@ -213,4 +225,25 @@ body{
 
 .footer .social a:hover{
     color: #fff;
+}
+
+.social {
+margin-top: 15px;
+display: flex;
+gap: 20px;
+}
+.social img {
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.social img:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
 }
